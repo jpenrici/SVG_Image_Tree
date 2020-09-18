@@ -3,67 +3,57 @@
 "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="400px" height="400px" viewBox="0 0 400 400"
 	xmlns="http://www.w3.org/2000/svg" version="1.1">
-	<title>Tree SVG</title>
+	<title>Tree SVG - C</title>
 	<path
 		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		d="M 0,400 400,400"
-		id="base"
-/>
+		id="base" />
 	<path
 		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		d="M 200,400 200,300"
-		id="tronco"
-/>
+		id="trunk" />
 	<path
 		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		d="M 200,300 235,265"
-		id="ramo1"
-/>
+		id="branch1" />
 	<ellipse
 		style="opacity:0.6;fill:#00FF00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		ry="50"
 		rx="50"
 		cy="265"
 		cx="235"
-		id="ellipse_1"
-/>
+		id="ellipse_1" />
 	<path
 		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		d="M 217,283 181,248"
-		id="ramo2"
-/>
+		id="branch2" />
 	<ellipse
 		style="opacity:0.6;fill:#00FF00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		ry="50"
 		rx="50"
 		cy="248"
 		cx="181"
-		id="ellipse_2"
-/>
+		id="ellipse_2" />
 	<path
 		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		d="M 199,266 234,231"
-		id="ramo3"
-/>
+		id="branch3" />
 	<ellipse
 		style="opacity:0.6;fill:#00FF00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		ry="50"
 		rx="50"
 		cy="231"
 		cx="234"
-		id="ellipse_3"
-/>
+		id="ellipse_3" />
 	<path
 		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		d="M 216,249 180,214"
-		id="ramo4"
-/>
+		id="branch4" />
 	<ellipse
 		style="opacity:0.6;fill:#00FF00;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 		ry="50"
 		rx="50"
 		cy="214"
 		cx="180"
-		id="ellipse_4"
-/>
+		id="ellipse_4" />
 </svg>

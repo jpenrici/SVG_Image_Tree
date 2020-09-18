@@ -25,7 +25,7 @@
 /* SVG */
 #define VBX   "400"         // viewBox largura
 #define VBY   "400"         // viewBox altura
-#define TITLE "Tree SVG"
+#define TITLE "Tree SVG - C"
 
 /* Line */
 #define COLOR_LINE "#2B1100"
@@ -96,7 +96,7 @@ void create(int branches)
     // tronco
     x0 = width/2;
     y0 = stem;
-    join(&svg, line("tronco", x0, 0, x0, y0));
+    join(&svg, line("trunk", x0, 0, x0, y0));
 
     // TESTE: RAMOS FIXOS -- em construção --
     // ramo 1
@@ -105,16 +105,16 @@ void create(int branches)
     radius = 50;
     angle = 45;
     move(&x1, &y1, radius, angle);
-    join(&svg, line("ramo1", x0, y0, x1, y1));
+    join(&svg, line("branch1", x0, y0, x1, y1));
     join(&svg, ellipse(1, radius, radius, x1, y1));
 
-    // ramo 2
+    // branch 2
     move(&x0, &y0, radius/2, angle);
     x1 = x0;
     y1 = y0;
     angle += 90;
     move(&x1, &y1, radius, angle);
-    join(&svg, line("ramo2", x0, y0, x1, y1));
+    join(&svg, line("branch2", x0, y0, x1, y1));
     join(&svg, ellipse(2, radius, radius, x1, y1));
 
     // ramo 3
@@ -123,7 +123,7 @@ void create(int branches)
     y1 = y0;
     angle = 45;
     move(&x1, &y1, radius, angle);
-    join(&svg, line("ramo3", x0, y0, x1, y1));
+    join(&svg, line("branch3", x0, y0, x1, y1));
     join(&svg, ellipse(3, radius, radius, x1, y1));
 
     // ramo 4
@@ -132,7 +132,7 @@ void create(int branches)
     y1 = y0;
     angle += 90;
     move(&x1, &y1, radius, angle);
-    join(&svg, line("ramo4", x0, y0, x1, y1));
+    join(&svg, line("branch4", x0, y0, x1, y1));
     join(&svg, ellipse(4, radius, radius, x1, y1)); 
     // -- em construção --
 
@@ -165,8 +165,7 @@ char* line(char* id, int x0, int y0, int x1, int y1)
     char buffer[BUFFER];
     sprintf(buffer,
             "%d,%d %d,%d\"" EOL
-            TAB TAB "id=\"%s\"" EOL
-            "/>" EOL,
+            TAB TAB "id=\"%s\" />" EOL,
              x0, y0, x1, y1, id);
     join(&element, buffer);
 
@@ -194,8 +193,7 @@ char* ellipse(int id, int rx, int ry, int cx, int cy)
             TAB TAB "rx=\"%d\"" EOL
             TAB TAB "cy=\"%d\"" EOL
             TAB TAB "cx=\"%d\"" EOL
-            TAB TAB "id=\"ellipse_%d\"" EOL
-            "/>" EOL,
+            TAB TAB "id=\"ellipse_%d\" />" EOL,
             ry, rx, cy, cx, id);
     join(&element, buffer);
 

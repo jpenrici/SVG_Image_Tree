@@ -1,2 +1,2 @@
-# Tree_SVG-C
+# Tree_SVG
 Create SVG image with C.

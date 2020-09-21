@@ -29,7 +29,7 @@
 
 /* Line */
 #define COLOR_LINE "#2B1100"
-#define STROKE_LINE "5"
+#define STROKE_LINE "8"
 
 /* Circle */
 #define COLOR_CIRCLE "#00FF00"
@@ -51,7 +51,9 @@ const int BUFFER = 1024;    // tamanho do armazenamento temporário de string
 void create(int branches);
 void move(int *x, int *y, int radius, int angle);
 char* line(char *id, int x0, int y0, int x1, int y1);
-char* ellipse(int id, int rx, int ry, int cx, int cy);
+char* ellipse(char *id, int rx, int ry, int cx, int cy);
+void ramify(char *id, int x0, int y0, int radius, int angle, int branches,
+            char** svg);
 
 void alert(char *message /* string */, int stop /* boolean: 1 or 0 */);
 void join(char **original /* string */, const char *extra /* string */);
@@ -65,7 +67,7 @@ int main(int argc, char **argv)
         create(atoi(argv[1]));
     } else {
         printf("Example!\n");
-        create(1);
+        create(4);
     }
 
     return EXIT_SUCCESS;
@@ -85,8 +87,10 @@ void create(int branches)
     temp = "";
     height = atoi(VBY);
     width  = atoi(VBX);
-    stem = 100;
-
+    stem = 50;
+    radius = 250;
+    angle = 90;
+  
     // cabeçalho SVG
     join(&svg, HEAD);
 
@@ -98,43 +102,9 @@ void create(int branches)
     y0 = stem;
     join(&svg, line("trunk", x0, 0, x0, y0));
 
-    // TESTE: RAMOS FIXOS -- em construção --
-    // ramo 1
-    x1 = x0;
-    y1 = y0;
-    radius = 50;
-    angle = 45;
-    move(&x1, &y1, radius, angle);
-    join(&svg, line("branch1", x0, y0, x1, y1));
-    join(&svg, ellipse(1, radius, radius, x1, y1));
-
-    // branch 2
-    move(&x0, &y0, radius/2, angle);
-    x1 = x0;
-    y1 = y0;
-    angle += 90;
-    move(&x1, &y1, radius, angle);
-    join(&svg, line("branch2", x0, y0, x1, y1));
-    join(&svg, ellipse(2, radius, radius, x1, y1));
-
-    // ramo 3
-    move(&x0, &y0, radius/2, angle);
-    x1 = x0;
-    y1 = y0;
-    angle = 45;
-    move(&x1, &y1, radius, angle);
-    join(&svg, line("branch3", x0, y0, x1, y1));
-    join(&svg, ellipse(3, radius, radius, x1, y1));
-
-    // ramo 4
-    move(&x0, &y0, radius/2, angle);
-    x1 = x0;
-    y1 = y0;
-    angle += 90;
-    move(&x1, &y1, radius, angle);
-    join(&svg, line("branch4", x0, y0, x1, y1));
-    join(&svg, ellipse(4, radius, radius, x1, y1)); 
-    // -- em construção --
+    // ramo
+    ramify("branch", x0, y0, radius, angle, branches, &temp);
+    join(&svg, temp);
 
     // encerrar SVG
     join(&svg, FOOTER);
@@ -146,7 +116,7 @@ void create(int branches)
     printf("Finished.\n");
 }
 
-char* line(char* id, int x0, int y0, int x1, int y1)
+char* line(char *id, int x0, int y0, int x1, int y1)
 {
     printf("line %s: %i,%i to %i,%i\n", id, x0, y0, x1, y1);
 
@@ -172,9 +142,9 @@ char* line(char* id, int x0, int y0, int x1, int y1)
     return element;
 }
 
-char* ellipse(int id, int rx, int ry, int cx, int cy)
+char* ellipse(char *id, int rx, int ry, int cx, int cy)
 {
-    printf("ellipse %i: cx = %i, cy = %i and rx = %i, ry = %i\n",
+    printf("ellipse %s: cx = %i, cy = %i and rx = %i, ry = %i\n",
             id, rx, ry, cx, cy);
 
     char *element =
@@ -193,7 +163,7 @@ char* ellipse(int id, int rx, int ry, int cx, int cy)
             TAB TAB "rx=\"%d\"" EOL
             TAB TAB "cy=\"%d\"" EOL
             TAB TAB "cx=\"%d\"" EOL
-            TAB TAB "id=\"ellipse_%d\" />" EOL,
+            TAB TAB "id=\"%s\" />" EOL,
             ry, rx, cy, cx, id);
     join(&element, buffer);
 
@@ -209,6 +179,28 @@ void move(int *x, int *y, int radius, int angle)
     *y = (int) *y + radius * sin(angle * PI / 180);
 
     printf("%i, %i [radius = %i, angle = %i]\n", *x, *y, radius, angle);
+}
+
+void ramify(char *id, int x0, int y0, int radius, int angle, int branches,
+            char** svg)
+{
+    int x1 = x0;
+    int y1 = y0;
+
+    move(&x1, &y1, radius, angle);
+    join(&*svg, line("b1", x0, y0, x1, y1));
+    join(&*svg, ellipse("e1", branches * 20, branches * 10, x1, y1));    
+
+    int sX = (x1 - x0)/branches;
+    int sY = (y1 - y0)/branches;
+    radius = (int) radius/branches;
+    for (int i = 1; i < branches; ++i)
+    {
+        int x = x0 + i * sX;
+        int y = y0 + i * sY;
+        ramify("", x, y, radius, angle + 45, branches - 1, &*svg);
+        ramify("", x, y, radius, angle - 45, branches - 1, &*svg);      
+    }
 }
 
 /******************/

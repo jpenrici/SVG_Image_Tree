@@ -188,8 +188,8 @@ void ramify(char *id, int x0, int y0, int radius, int angle, int branches,
     int y1 = y0;
 
     move(&x1, &y1, radius, angle);
-    join(&*svg, line("b1", x0, y0, x1, y1));
-    join(&*svg, ellipse("e1", branches * 20, branches * 10, x1, y1));    
+    join(svg, line("b1", x0, y0, x1, y1));
+    join(svg, ellipse("e1", branches * 20, branches * 10, x1, y1));
 
     int sX = (x1 - x0)/branches;
     int sY = (y1 - y0)/branches;
@@ -198,8 +198,8 @@ void ramify(char *id, int x0, int y0, int radius, int angle, int branches,
     {
         int x = x0 + i * sX;
         int y = y0 + i * sY;
-        ramify("", x, y, radius, angle + 45, branches - 1, &*svg);
-        ramify("", x, y, radius, angle - 45, branches - 1, &*svg);      
+        ramify("", x, y, radius, angle + 45, branches - 1, svg);
+        ramify("", x, y, radius, angle - 45, branches - 1, svg);
     }
 }
 

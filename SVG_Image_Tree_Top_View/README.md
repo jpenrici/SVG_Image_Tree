@@ -2,7 +2,7 @@
 
 Create the SVG image of the tree in the top view.<br>
 
-## Compile and rum
+## Compile and run
 
 ```
     cd src

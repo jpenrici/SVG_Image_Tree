@@ -1,4 +1,4 @@
-# Tree_SVG
+# SVG_Image_Tree
 
 Create an SVG image with C.<br>
 As a comparison, also written in Python.<br>

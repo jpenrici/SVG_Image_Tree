@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="500"
+   height="500"
+   viewBox= "0 0 500 500"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <!--      Created in C++ algorithm       -->
+  <!-- Attention: do not modify this code. -->
+
+  <g id="Leaf_Original">
+     <path
+        id="Leaf_Original_68"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M -25.000000,0.000000 C -14.174682,6.250000 -14.174682,6.250000 0.000000,0.000000 -14.174682,-6.250000 -14.174682,-6.250000 -25.000000,0.000000 Z" />
+  </g>
+  <g id="G-Tree ">
+     <path
+        id="Branch_0"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 259.659258,252.588190 C 283.807404,259.058666 283.807404,259.058666 307.955550,265.529142 283.807404,259.058666 283.807404,259.058666 259.659258,252.588190 Z" />
+     <path
+        id="Branch_1"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 265.454813,254.141105 C 283.132483,271.818774 283.132483,271.818774 300.810153,289.496443 283.132483,271.818774 283.132483,271.818774 265.454813,254.141105 Z" />
+     <path
+        id="Branch_2"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 278.182735,266.869027 C 302.330881,273.339503 302.330881,273.339503 326.479027,279.809979 302.330881,273.339503 302.330881,273.339503 278.182735,266.869027 Z" />
+     <path
+        id="Branch_3"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 301.364955,273.080684 C 319.042625,290.758353 319.042625,290.758353 336.720295,308.436022 319.042625,290.758353 319.042625,290.758353 301.364955,273.080684 Z" />
+     <path
+        id="Branch_4"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 315.507091,287.222819 C 321.977568,311.370964 321.977568,311.370964 328.448044,335.519110 321.977568,311.370964 321.977568,311.370964 315.507091,287.222819 Z" />
+     <path
+        id="Branch_5"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 323.271663,316.200594 C 316.801188,340.348739 316.801188,340.348739 310.330712,364.496885 316.801188,340.348739 316.801188,340.348739 323.271663,316.200594 Z" />
+     <path
+        id="Branch_6"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 314.989455,347.110220 C 297.311786,364.787891 297.311786,364.787891 279.634117,382.465561 297.311786,364.787891 297.311786,364.787891 314.989455,347.110220 Z" />
+     <path
+        id="Branch_7"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 257.071068,257.071068 C 274.748738,274.748737 274.748738,274.748737 292.426407,292.426406 274.748738,274.748737 274.748738,274.748737 257.071068,257.071068 Z" />
+     <path
+        id="Branch_8"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 261.313709,261.313708 C 285.461854,267.784184 285.461854,267.784184 309.610000,274.254660 285.461854,267.784184 285.461854,267.784184 261.313709,261.313708 Z" />
+     <path
+        id="Branch_9"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 268.075189,263.125442 C 285.752859,280.803111 285.752859,280.803111 303.430529,298.480780 285.752859,280.803111 285.752859,280.803111 268.075189,263.125442 Z" />
+     <path
+        id="Branch_10"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 285.045752,280.096004 C 309.193898,286.566480 309.193898,286.566480 333.342044,293.036956 309.193898,286.566480 309.193898,286.566480 285.045752,280.096004 Z" />
+     <path
+        id="Branch_11"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 323.682786,290.448766 C 347.830931,283.978290 347.830931,283.978290 371.979077,277.507814 347.830931,283.978290 347.830931,283.978290 323.682786,290.448766 Z" />
+     <path
+        id="Branch_12"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 346.865005,284.237109 C 364.542675,266.559440 364.542675,266.559440 382.220345,248.881770 364.542675,266.559440 364.542675,266.559440 346.865005,284.237109 Z" />
+     <path
+        id="Branch_13"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 358.178714,272.923400 C 364.649191,248.775255 364.649191,248.775255 371.119667,224.627109 364.649191,248.775255 364.649191,248.775255 358.178714,272.923400 Z" />
+     <path
+        id="Branch_14"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 364.649191,248.775255 C 382.326860,231.097586 382.326860,231.097586 400.004530,213.419916 382.326860,231.097586 382.326860,231.097586 364.649191,248.775255 Z" />
+     <path
+        id="Branch_15"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 252.588191,259.659258 C 259.058667,283.807404 259.058667,283.807404 265.529144,307.955549 259.058667,283.807404 259.058667,283.807404 252.588191,259.659258 Z" />
+     <path
+        id="Branch_16"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 255.694019,271.250368 C 249.223544,295.398514 249.223544,295.398514 242.753069,319.546660 249.223544,295.398514 249.223544,295.398514 255.694019,271.250368 Z" />
+     <path
+        id="Branch_17"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 253.882286,278.011849 C 236.204618,295.689519 236.204618,295.689519 218.526949,313.367189 236.204618,295.689519 236.204618,295.689519 253.882286,278.011849 Z" />
+     <path
+        id="Branch_18"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 243.982792,287.911344 C 237.512316,312.059490 237.512316,312.059490 231.041841,336.207636 237.512316,312.059490 237.512316,312.059490 243.982792,287.911344 Z" />
+     <path
+        id="Branch_19"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 241.394602,297.570603 C 247.865078,321.718748 247.865078,321.718748 254.335555,345.866894 247.865078,321.718748 247.865078,321.718748 241.394602,297.570603 Z" />
+     <path
+        id="Branch_20"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 247.606259,320.752822 C 265.283929,338.430492 265.283929,338.430492 282.961599,356.108161 265.283929,338.430492 265.283929,338.430492 247.606259,320.752822 Z" />
+     <path
+        id="Branch_21"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 270.233677,343.380239 C 294.381822,349.850715 294.381822,349.850715 318.529968,356.321191 294.381822,349.850715 294.381822,349.850715 270.233677,343.380239 Z" />
+     <path
+        id="Branch_22"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 247.411810,259.659258 C 240.941334,283.807404 240.941334,283.807404 234.470859,307.955550 240.941334,283.807404 240.941334,283.807404 247.411810,259.659258 Z" />
+     <path
+        id="Branch_23"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 245.858896,265.454813 C 252.329372,289.602959 252.329372,289.602959 258.799849,313.751104 252.329372,289.602959 252.329372,289.602959 245.858896,265.454813 Z" />
+     <path
+        id="Branch_24"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 247.670629,272.216294 C 265.348299,289.893963 265.348299,289.893963 283.025969,307.571633 265.348299,289.893963 265.348299,289.893963 247.670629,272.216294 Z" />
+     <path
+        id="Branch_25"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 253.327484,277.873148 C 259.797960,302.021294 259.797960,302.021294 266.268437,326.169439 259.797960,302.021294 259.797960,302.021294 253.327484,277.873148 Z" />
+     <path
+        id="Branch_26"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 255.915674,287.532406 C 273.593344,305.210076 273.593344,305.210076 291.271014,322.887745 273.593344,305.210076 273.593344,305.210076 255.915674,287.532406 Z" />
+     <path
+        id="Branch_27"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 281.371519,312.988250 C 287.841995,337.136396 287.841995,337.136396 294.312472,361.284541 287.841995,337.136396 287.841995,337.136396 281.371519,312.988250 Z" />
+     <path
+        id="Branch_28"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 242.928932,257.071068 C 225.251264,274.748738 225.251264,274.748738 207.573595,292.426409 225.251264,274.748738 225.251264,274.748738 242.928932,257.071068 Z" />
+     <path
+        id="Branch_29"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 230.201011,269.798991 C 223.730536,293.947137 223.730536,293.947137 217.260060,318.095282 223.730536,293.947137 223.730536,293.947137 230.201011,269.798991 Z" />
+     <path
+        id="Branch_30"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 228.389278,276.560472 C 234.859754,300.708617 234.859754,300.708617 241.330231,324.856763 234.859754,300.708617 234.859754,300.708617 228.389278,276.560472 Z" />
+     <path
+        id="Branch_31"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 232.530383,292.015285 C 250.208053,309.692954 250.208053,309.692954 267.885722,327.370623 250.208053,309.692954 250.208053,309.692954 232.530383,292.015285 Z" />
+     <path
+        id="Branch_32"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 239.601451,299.086352 C 263.749596,305.556828 263.749596,305.556828 287.897742,312.027304 263.749596,305.556828 263.749596,305.556828 239.601451,299.086352 Z" />
+     <path
+        id="Branch_33"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 274.374781,308.403838 C 292.052450,326.081507 292.052450,326.081507 309.730120,343.759176 292.052450,326.081507 292.052450,326.081507 274.374781,308.403838 Z" />
+     <path
+        id="Branch_34"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 288.516916,322.545973 C 312.665062,329.016449 312.665062,329.016449 336.813208,335.486925 312.665062,329.016449 312.665062,329.016449 288.516916,322.545973 Z" />
+     <path
+        id="Branch_35"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 312.665062,329.016449 C 336.813208,322.545973 336.813208,322.545973 360.961353,316.075497 336.813208,322.545973 336.813208,322.545973 312.665062,329.016449 Z" />
+     <path
+        id="Branch_36"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 240.340742,252.588191 C 216.192597,259.058668 216.192597,259.058668 192.044451,265.529146 216.192597,259.058668 216.192597,259.058668 240.340742,252.588191 Z" />
+     <path
+        id="Branch_37"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 240.340742,247.411810 C 216.192596,240.941335 216.192596,240.941335 192.044450,234.470861 216.192596,240.941335 216.192596,240.941335 240.340742,247.411810 Z" />
+     <path
+        id="Branch_38"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 242.928932,242.928933 C 225.251261,225.251264 225.251261,225.251264 207.573590,207.573596 225.251261,225.251264 225.251261,225.251264 242.928932,242.928933 Z" />
+     <path
+        id="Branch_39"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 238.686291,238.686292 C 232.215813,214.538147 232.215813,214.538147 225.745335,190.390002 232.215813,214.538147 232.215813,214.538147 238.686291,238.686292 Z" />
+     <path
+        id="Branch_40"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 236.874557,231.924812 C 243.345031,207.776665 243.345031,207.776665 249.815505,183.628519 243.345031,207.776665 243.345031,207.776665 236.874557,231.924812 Z" />
+     <path
+        id="Branch_41"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 241.015660,216.469998 C 258.693328,198.792327 258.693328,198.792327 276.370996,181.114656 258.693328,198.792327 258.693328,198.792327 241.015660,216.469998 Z" />
+     <path
+        id="Branch_42"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 248.086727,209.398930 C 272.234872,202.928451 272.234872,202.928451 296.383017,196.457972 272.234872,202.928451 272.234872,202.928451 248.086727,209.398930 Z" />
+     <path
+        id="Branch_43"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 259.677837,206.293100 C 277.355505,188.615429 277.355505,188.615429 295.033173,170.937757 277.355505,188.615429 277.355505,188.615429 259.677837,206.293100 Z" />
+     <path
+        id="Branch_44"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 270.991545,194.979390 C 295.139690,188.508912 295.139690,188.508912 319.287834,182.038433 295.139690,188.508912 295.139690,188.508912 270.991545,194.979390 Z" />
+     <path
+        id="Branch_45"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 295.139690,188.508912 C 319.287836,194.979385 319.287836,194.979385 343.435982,201.449859 319.287836,194.979385 319.287836,194.979385 295.139690,188.508912 Z" />
+     <path
+        id="Branch_46"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 247.411809,240.340742 C 240.941331,216.192597 240.941331,216.192597 234.470853,192.044452 240.941331,216.192597 240.941331,216.192597 247.411809,240.340742 Z" />
+     <path
+        id="Branch_47"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 244.305979,228.749632 C 226.628309,211.071964 226.628309,211.071964 208.950638,193.394296 226.628309,211.071964 226.628309,211.071964 244.305979,228.749632 Z" />
+     <path
+        id="Branch_48"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 234.406484,218.850138 C 227.936006,194.701993 227.936006,194.701993 221.465528,170.553848 227.936006,194.701993 227.936006,194.701993 234.406484,218.850138 Z" />
+     <path
+        id="Branch_49"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 232.335931,211.122732 C 214.658260,193.445063 214.658260,193.445063 196.980589,175.767395 214.658260,193.445063 214.658260,193.445063 232.335931,211.122732 Z" />
+     <path
+        id="Branch_50"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 204.051658,182.838462 C 179.903512,176.367987 179.903512,176.367987 155.755366,169.897513 179.903512,176.367987 179.903512,176.367987 204.051658,182.838462 Z" />
+     <path
+        id="Branch_51"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 192.460548,179.732634 C 168.312402,186.203112 168.312402,186.203112 144.164257,192.673589 168.312402,186.203112 168.312402,186.203112 192.460548,179.732634 Z" />
+     <path
+        id="Branch_52"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 252.588190,240.340742 C 259.058664,216.192595 259.058664,216.192595 265.529138,192.044449 259.058664,216.192595 259.058664,216.192595 252.588190,240.340742 Z" />
+     <path
+        id="Branch_53"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 255.694017,228.749631 C 273.371685,211.071960 273.371685,211.071960 291.049353,193.394289 273.371685,211.071960 273.371685,211.071960 255.694017,228.749631 Z" />
+     <path
+        id="Branch_54"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 260.643764,223.799883 C 267.114238,199.651737 267.114238,199.651737 273.584712,175.503591 267.114238,199.651737 267.114238,199.651737 260.643764,223.799883 Z" />
+     <path
+        id="Branch_55"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 262.714316,216.072477 C 256.243838,191.924331 256.243838,191.924331 249.773360,167.776186 256.243838,191.924331 256.243838,191.924331 262.714316,216.072477 Z" />
+     <path
+        id="Branch_56"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 257.537934,196.753960 C 264.008408,172.605814 264.008408,172.605814 270.478882,148.457668 264.008408,172.605814 264.008408,172.605814 257.537934,196.753960 Z" />
+     <path
+        id="Branch_57"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 260.643761,185.162850 C 254.173283,161.014705 254.173283,161.014705 247.702805,136.866560 254.173283,161.014705 254.173283,161.014705 260.643761,185.162850 Z" />
+     <path
+        id="Branch_58"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 252.361549,154.253224 C 234.683879,136.575556 234.683879,136.575556 217.006208,118.897888 234.683879,136.575556 234.683879,136.575556 252.361549,154.253224 Z" />
+     <path
+        id="Branch_59"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 257.071067,242.928932 C 274.748735,225.251260 274.748735,225.251260 292.426403,207.573589 274.748735,225.251260 274.748735,225.251260 257.071067,242.928932 Z" />
+     <path
+        id="Branch_60"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 261.313707,238.686290 C 285.461852,232.215812 285.461852,232.215812 309.609997,225.745333 285.461852,232.215812 285.461852,232.215812 261.313707,238.686290 Z" />
+     <path
+        id="Branch_61"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 274.836669,235.062822 C 292.514337,217.385151 292.514337,217.385151 310.192004,199.707480 292.514337,217.385151 292.514337,217.385151 274.836669,235.062822 Z" />
+     <path
+        id="Branch_62"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 280.493522,229.405968 C 286.963996,205.257821 286.963996,205.257821 293.434471,181.109675 286.963996,205.257821 286.963996,205.257821 280.493522,229.405968 Z" />
+     <path
+        id="Branch_63"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 290.846281,190.768934 C 308.523949,173.091263 308.523949,173.091263 326.201617,155.413591 308.523949,173.091263 308.523949,173.091263 290.846281,190.768934 Z" />
+     <path
+        id="Branch_64"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 307.816842,173.798369 C 314.287316,149.650223 314.287316,149.650223 320.757790,125.502077 314.287316,149.650223 314.287316,149.650223 307.816842,173.798369 Z" />
+     <path
+        id="Branch_65"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 311.957945,158.343556 C 329.635613,140.665885 329.635613,140.665885 347.313281,122.988213 329.635613,140.665885 329.635613,140.665885 311.957945,158.343556 Z" />
+     <path
+        id="Branch_66"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 259.659258,247.411809 C 283.807403,240.941330 283.807403,240.941330 307.955548,234.470851 283.807403,240.941330 283.807403,240.941330 259.659258,247.411809 Z" />
+     <path
+        id="Branch_67"
+        style="opacity:1.0;fill:#00FF00;stroke:#000000;stroke-width:0.5;stroke-opacity:1"
+        d="M 282.841477,241.200149 C 306.989624,247.670623 306.989624,247.670623 331.137770,254.141096 306.989624,247.670623 306.989624,247.670623 282.841477,241.200149 Z" />
+
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_0"
+        transform="matrix( 0.258819 0.965926 -0.965926 0.258819 276.875037 283.238998 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_1"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 304.452202 275.460823 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_2"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 309.401949 280.410570 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_3"
+        transform="matrix( 0.258819 0.965926 -0.965926 0.258819 296.674028 303.037987 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_4"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 354.397965 326.113691 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_5"
+        transform="matrix( 0.258819 0.965926 -0.965926 0.258819 334.918521 359.667255 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_6"
+        transform="matrix( -0.707107 0.707107 -0.707107 -0.707107 261.956448 400.143231 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_7"
+        transform="matrix( 0.258819 0.965926 -0.965926 0.258819 280.202520 292.930441 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_8"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 357.490189 299.507432 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_9"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 322.041939 302.950054 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_10"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 396.127223 271.037338 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_11"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 359.422041 293.813413 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_12"
+        transform="matrix( 0.707107 -0.707107 0.707107 0.707107 399.898015 231.204101 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_13"
+        transform="matrix( 0.258819 -0.965926 0.965926 0.258819 377.590144 200.478964 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_14"
+        transform="matrix( 0.707107 -0.707107 0.707107 0.707107 417.682200 195.742247 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_15"
+        transform="matrix( -0.258819 0.965926 -0.965926 -0.258819 247.670630 289.602959 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_16"
+        transform="matrix( -0.707107 0.707107 -0.707107 -0.707107 200.849280 331.044860 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_17"
+        transform="matrix( -0.258819 0.965926 -0.965926 -0.258819 224.784395 324.787413 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_18"
+        transform="matrix( -0.258819 0.965926 -0.965926 -0.258819 224.571366 360.355782 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_19"
+        transform="matrix( 0.258819 0.965926 -0.965926 0.258819 260.806032 370.015039 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_20"
+        transform="matrix( -0.258819 0.965926 -0.965926 -0.258819 238.029955 333.309858 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_21"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 300.703639 325.249302 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_22"
+        transform="matrix( 0.258819 0.965926 -0.965926 0.258819 279.356714 328.651115 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_23"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 307.331399 361.575546 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_24"
+        transform="matrix( -0.258819 0.965926 -0.965926 -0.258819 210.789585 342.243428 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_25"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 312.045888 318.497780 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_26"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 268.870230 319.869850 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_27"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 385.109499 309.605021 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_28"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 198.805931 250.776460 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_29"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 193.010376 252.329374 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_30"
+        transform="matrix( -0.707107 0.707107 -0.707107 -0.707107 193.685299 278.030434 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_31"
+        transform="matrix( -0.707107 0.707107 -0.707107 -0.707107 187.889744 279.583348 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_32"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 175.623712 256.988118 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_33"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 216.867516 228.181228 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_34"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 211.071961 226.628314 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_35"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 205.276406 225.075400 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_36"
+        transform="matrix( -0.965926 0.258819 -0.258819 -0.965926 193.010376 247.670632 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_37"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 193.685296 221.969572 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_38"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 187.889741 220.416658 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_39"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 182.094186 218.863744 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_40"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 219.274857 166.241857 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_41"
+        transform="matrix( 0.258819 -0.965926 0.965926 0.258819 256.285979 159.480373 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_42"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 232.474631 200.049260 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_43"
+        transform="matrix( 0.707107 -0.707107 0.707107 0.707107 294.048664 163.436984 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_44"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 343.435979 175.567954 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_45"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 367.584129 207.920332 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_46"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 232.885754 199.651740 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_47"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 214.995050 146.405702 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_48"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 179.302919 158.089726 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_49"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 201.116717 197.581189 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_50"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 211.723316 172.832452 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_51"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 131.607220 163.427038 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_52"
+        transform="matrix( -0.965926 0.258819 -0.258819 -0.965926 120.016112 199.144066 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_53"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 152.857589 177.403265 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_54"
+        transform="matrix( -0.707107 0.707107 -0.707107 -0.707107 143.873253 205.692516 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_55"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 145.130182 179.473818 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_56"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 152.857589 177.403265 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_57"
+        transform="matrix( 0.258819 -0.965926 0.965926 0.258819 280.055186 151.355445 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_58"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 242.448454 188.735550 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_59"
+        transform="matrix( 0.258819 -0.965926 0.965926 0.258819 276.949356 124.309522 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_60"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 241.232327 112.718415 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_61"
+        transform="matrix( -0.707107 -0.707107 0.707107 -0.707107 199.328537 101.220219 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_62"
+        transform="matrix( -0.965926 -0.258819 0.258819 -0.965926 210.535733 130.105081 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_63"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 333.758142 219.274855 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_64"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 276.611234 195.598564 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_65"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 279.199424 185.939306 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_66"
+        transform="matrix( -0.258819 -0.965926 0.965926 -0.258819 281.787613 176.280047 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_67"
+        transform="matrix( 0.707107 -0.707107 0.707107 0.707107 343.879284 137.735920 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_68"
+        transform="matrix( 0.258819 -0.965926 0.965926 0.258819 327.228264 101.353931 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_69"
+        transform="matrix( 0.707107 -0.707107 0.707107 0.707107 364.990949 105.310542 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_70"
+        transform="matrix( 0.258819 -0.965926 0.965926 0.258819 336.106087 116.517738 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_71"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 295.398514 250.776452 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_72"
+        transform="matrix( 0.965926 0.258819 -0.258819 0.965926 355.285916 260.611569 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_73"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 307.280630 260.689549 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_74"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 320.512584 238.353136 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_75"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 327.274065 240.164868 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_76"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 334.035546 241.976601 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_77"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 334.326554 267.936479 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_78"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 347.558508 245.600066 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_79"
+        transform="matrix( 0.965926 -0.258819 0.258819 0.965926 335.967398 242.494239 )"
+        width="100%"
+        height="100%" />
+     <use 
+        x="0"
+        y="0"
+        xlink:href="#Leaf_Original"
+        id="Clone_Leaf_Original_80"
+        transform="matrix( 0.707107 0.707107 -0.707107 0.707107 335.292480 268.195298 )"
+        width="100%"
+        height="100%" />
+  </g>
+
+  <!-- Attention: do not modify this code. -->
+</svg>

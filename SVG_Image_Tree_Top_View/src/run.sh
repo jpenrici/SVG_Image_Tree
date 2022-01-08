@@ -60,6 +60,7 @@ if [ -f "$name" ]; then
     echo "copy $name to $path ..."
     cp $name $path
     cd $path
+    echo "Run test with default values ..."
     echo "run $name ..."
     ./$name &
 else

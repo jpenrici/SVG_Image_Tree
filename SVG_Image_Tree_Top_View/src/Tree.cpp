@@ -6,7 +6,7 @@ Tree::~Tree() {};
 void Tree::create(int crown_diameter)
 {
 	// Tree
-	crown_diameter = max(100, crown_diameter);
+	crown_diameter = max(CROWN_DIAMETER, crown_diameter);
 	int width = crown_diameter;
 	int height = width;
 

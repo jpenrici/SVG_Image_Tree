@@ -2,6 +2,11 @@
 
 Create the SVG image of the tree in the top view.<br>
 
+## Requirements
+
+- Cmake
+- C++ 20
+
 ## Compile and run
 
 ```

@@ -1,243 +1,209 @@
 /*
- *  Construir arquivo SVG com desenho de uma pequena árvore.
+ * Generate an SVG drawing of a simple fractal tree (front view).
  *
- *  input: número de ramos (branches)
- *  output: arquivo SVG    (tree.svg)
+ * Build: gcc -std=c23 -O2 -Wall -Wextra tree.c -o tree -lm
  *
- *  Compilar:
- *              gcc create_svg_tree.c -o tree -lm
- *
- *  Executar:
- *              tree [número de ramos] 
+ * Run:   ./tree [branches] [output.svg]
+ *        ./tree 4 tree.svg
  */
+#include <math.h>
+#include <stdarg.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 
-/* Geral */
-#define TRUE  1
-#define FALSE 0
-#define TAB   "\t"
-#define EOL   "\n"
-#define PI    3.14159265
+constexpr double PI = 3.14159265358979323846;
 
-/* SVG */
-#define VBX   "400"         // viewBox largura
-#define VBY   "400"         // viewBox altura
-#define TITLE "Tree SVG - C"
+typedef struct {
+    int viewbox_w, viewbox_h;
+    double stem_height;
+    double initial_radius;
+    double initial_angle;
+    const char* line_color;
+    int line_width;
+    const char* leaf_color;
+} Config;
 
-/* Line */
-#define COLOR_LINE "#2B1100"
-#define STROKE_LINE "8"
+typedef struct {
+    double x, y;
+} Point;
 
-/* Circle */
-#define COLOR_CIRCLE "#00FF00"
+static Point point_move(Point p, double radius, double angle_deg);
 
-/* Constantes */
-const char *HEAD =                                  // cabeçalho SVG
-    "<?xml version=\"1.0\" standalone=\"no\"?>" EOL
-    "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\"" EOL
-    "\"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">" EOL
-    "<svg width=\"" VBX "px\" height=\"" VBY 
-    "px\" viewBox=\"0 0 " VBX " " VBY "\"" EOL
-    TAB "xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">" EOL
-    TAB "<title>" TITLE "</title>" EOL;
-const char *FOOTER = "</svg>";                      // final SVG
-const char *OUTPUT = "tree.svg";                    // arquivo de saída
-const int BUFFER = 1024;    // tamanho do armazenamento temporário de string
+typedef struct {
+    char* data;
+    size_t length;
+    size_t capacity;
+} StringBuilder;
 
-/* Declarações */
-void create(int branches);
-void move(int *x, int *y, int radius, int angle);
-char* line(char *id, int x0, int y0, int x1, int y1);
-char* ellipse(char *id, int rx, int ry, int cx, int cy);
-void ramify(char *id, int x0, int y0, int radius, int angle, int branches,
-            char** svg);
+static void sb_init(StringBuilder* sb);
+static void sb_append(StringBuilder* sb, const char* text);
+static void sb_appendf(StringBuilder* sb, const char* fmt, ...);
+static void sb_free(StringBuilder* sb);
 
-void alert(char *message /* string */, int stop /* boolean: 1 or 0 */);
-void join(char **original /* string */, const char *extra /* string */);
-void export(const char *filename /* string */, const char *text /* string */);
+static double flip_y(double y);
+static void svg_line(StringBuilder* out, const char* id, Point p0, Point p1);
+static void svg_ellipse(StringBuilder* out, const char* id, Point c, double rx, double ry);
+static void ramify(const char* id, Point p0, double radius, double angle, int branches, StringBuilder* out);
+static void build_svg(StringBuilder* out, int branches);
 
+static const Config CFG = {
+    .viewbox_w = 400,
+    .viewbox_h = 400,
+    .stem_height = 20.0,
+    .initial_radius = 250.0,
+    .initial_angle = 90.0,
+    .line_color = "#2B1100",
+    .line_width = 5,
+    .leaf_color = "#00A000",
+};
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
-    if (argc > 1) {
-        printf("Branches: %s\n", argv[1]);
-        create(atoi(argv[1]));
-    } else {
-        printf("Example!\n");
-        create(4);
+    int branches = (argc > 1) ? atoi(argv[1]) : 4;
+    const char* output = (argc > 2) ? argv[2] : "tree.svg";
+
+    if (branches <= 0) {
+        fprintf(stderr, "branches must be a positive integer\n");
+        return EXIT_FAILURE;
     }
 
+    StringBuilder svg;
+    build_svg(&svg, branches);
+
+    FILE* file = fopen(output, "w");
+    if (!file) {
+        perror("fopen");
+        sb_free(&svg);
+        return EXIT_FAILURE;
+    }
+    fputs(svg.data, file);
+    fclose(file);
+    sb_free(&svg);
+
+    printf("Check %s\n", output);
+    printf("Finished.\n");
     return EXIT_SUCCESS;
 }
 
-void create(int branches)
+static Point point_move(Point p, double radius, double angle_deg)
 {
-    char *svg;      // texto SVG
-    char *temp;     // string temporária
-
-    int height, width;      // viewBox
-    int x0, y0, x1, y1;     // coordenadas 
-    int radius, angle;      // raio, ângulo
-    int stem;               // altura dd tronco em px
-
-    svg = "";
-    temp = "";
-    height = atoi(VBY);
-    width  = atoi(VBX);
-    stem = 50;
-    radius = 250;
-    angle = 90;
-  
-    // cabeçalho SVG
-    join(&svg, HEAD);
-
-    // base
-    join(&svg, line("base", 0, 0, width, 0));
-
-    // tronco
-    x0 = width/2;
-    y0 = stem;
-    join(&svg, line("trunk", x0, 0, x0, y0));
-
-    // ramo
-    ramify("branch", x0, y0, radius, angle, branches, &temp);
-    join(&svg, temp);
-
-    // encerrar SVG
-    join(&svg, FOOTER);
-
-    // salvar arquivo
-    export(OUTPUT, svg);
-
-    printf("Check %s\n", OUTPUT);
-    printf("Finished.\n");
+    double rad = angle_deg * PI / 180.0;
+    return (Point) { p.x + radius * cos(rad), p.y + radius * sin(rad) };
 }
 
-char* line(char *id, int x0, int y0, int x1, int y1)
+static void sb_init(StringBuilder* sb)
 {
-    printf("line %s: %i,%i to %i,%i\n", id, x0, y0, x1, y1);
-
-    char *element = 
-        TAB "<path" EOL
-        TAB TAB "style=\"fill:none;stroke:" COLOR_LINE ";"
-                "stroke-width:" STROKE_LINE ";stroke-linecap:round;"
-                "stroke-linejoin:round;stroke-miterlimit:4;"
-                "stroke-dasharray:none;stroke-opacity:1\"" EOL
-        TAB TAB "d=\"M ";
-
-    // ajustar aos eixos X,Y
-    y0 = atoi(VBY) - y0;
-    y1 = atoi(VBY) - y1;
-
-    char buffer[BUFFER];
-    sprintf(buffer,
-            "%d,%d %d,%d\"" EOL
-            TAB TAB "id=\"%s\" />" EOL,
-             x0, y0, x1, y1, id);
-    join(&element, buffer);
-
-    return element;
+    sb->capacity = 4096;
+    sb->length = 0;
+    sb->data = malloc(sb->capacity);
+    if (!sb->data) {
+        fprintf(stderr, "Out of memory\n");
+        exit(EXIT_FAILURE);
+    }
+    sb->data[0] = '\0';
 }
 
-char* ellipse(char *id, int rx, int ry, int cx, int cy)
+static void sb_append(StringBuilder* sb, const char* text)
 {
-    printf("ellipse %s: cx = %i, cy = %i and rx = %i, ry = %i\n",
-            id, rx, ry, cx, cy);
-
-    char *element =
-        TAB "<ellipse" EOL
-        TAB TAB "style=\"opacity:0.6;fill:" COLOR_CIRCLE ";fill-opacity:1;"
-        "stroke:none;stroke-width:0;stroke-linecap:round;"
-        "stroke-linejoin:round;stroke-miterlimit:4;"
-        "stroke-dasharray:none;stroke-opacity:1\"" EOL;
-
-    // ajustar aos eixos X,Y
-    cy = atoi(VBY) - cy;       
-
-    char buffer[BUFFER];
-    sprintf(buffer, 
-            TAB TAB "ry=\"%d\"" EOL
-            TAB TAB "rx=\"%d\"" EOL
-            TAB TAB "cy=\"%d\"" EOL
-            TAB TAB "cx=\"%d\"" EOL
-            TAB TAB "id=\"%s\" />" EOL,
-            ry, rx, cy, cx, id);
-    join(&element, buffer);
-
-    return element;
+    size_t add = strlen(text);
+    if (sb->length + add + 1 > sb->capacity) {
+        while (sb->length + add + 1 > sb->capacity)
+            sb->capacity *= 2;
+        char* grown = realloc(sb->data, sb->capacity);
+        if (!grown) {
+            fprintf(stderr, "Out of memory\n");
+            exit(EXIT_FAILURE);
+        }
+        sb->data = grown;
+    }
+    memcpy(sb->data + sb->length, text, add + 1);
+    sb->length += add;
 }
 
-void move(int *x, int *y, int radius, int angle)
+static void sb_appendf(StringBuilder* sb, const char* fmt, ...)
 {
-    printf("(x,y): %i, %i => ", *x, *y);
-
-    // alterar X,Y
-    *x = (int) *x + radius * cos(angle * PI / 180);
-    *y = (int) *y + radius * sin(angle * PI / 180);
-
-    printf("%i, %i [radius = %i, angle = %i]\n", *x, *y, radius, angle);
+    char buffer[512];
+    va_list args;
+    va_start(args, fmt);
+    vsnprintf(buffer, sizeof buffer, fmt, args);
+    va_end(args);
+    sb_append(sb, buffer);
 }
 
-void ramify(char *id, int x0, int y0, int radius, int angle, int branches,
-            char** svg)
+static void sb_free(StringBuilder* sb)
 {
-    int x1 = x0;
-    int y1 = y0;
+    free(sb->data);
+    sb->data = NULL;
+}
 
-    move(&x1, &y1, radius, angle);
-    join(svg, line("b1", x0, y0, x1, y1));
-    join(svg, ellipse("e1", branches * 20, branches * 10, x1, y1));
+static double flip_y(double y) { return CFG.viewbox_h - y; }
 
-    int sX = (x1 - x0)/branches;
-    int sY = (y1 - y0)/branches;
-    radius = (int) radius/branches;
-    for (int i = 1; i < branches; ++i)
-    {
-        int x = x0 + i * sX;
-        int y = y0 + i * sY;
-        ramify("", x, y, radius, angle + 45, branches - 1, svg);
-        ramify("", x, y, radius, angle - 45, branches - 1, svg);
+static void svg_line(StringBuilder* out, const char* id, Point p0, Point p1)
+{
+    sb_appendf(out,
+        "\t<path\n"
+        "\t\tstyle=\"fill:none;stroke:%s;stroke-width:%d;"
+        "stroke-linecap:round;stroke-linejoin:round\"\n"
+        "\t\td=\"M %.2f,%.2f %.2f,%.2f\"\n"
+        "\t\tid=\"%s\" />\n",
+        CFG.line_color, CFG.line_width,
+        p0.x, flip_y(p0.y), p1.x, flip_y(p1.y), id);
+}
+
+static void svg_ellipse(StringBuilder* out, const char* id, Point c,
+    double rx, double ry)
+{
+    sb_appendf(out,
+        "\t<ellipse\n"
+        "\t\tstyle=\"opacity:0.6;fill:%s;stroke:none\"\n"
+        "\t\trx=\"%.2f\" ry=\"%.2f\" cx=\"%.2f\" cy=\"%.2f\"\n"
+        "\t\tid=\"leaf_%s\" />\n",
+        CFG.leaf_color, rx, ry, c.x, flip_y(c.y), id);
+}
+
+static void ramify(const char* id, Point p0, double radius, double angle,
+    int branches, StringBuilder* out)
+{
+    Point p1 = point_move(p0, radius, angle);
+
+    svg_line(out, id, p0, p1);
+    svg_ellipse(out, id, p1, branches * 20.0, branches * 10.0);
+
+    if (branches <= 1)
+        return;
+
+    double step_x = (p1.x - p0.x) / branches;
+    double step_y = (p1.y - p0.y) / branches;
+    double child_radius = radius / branches;
+
+    for (int i = 1; i < branches; ++i) {
+        Point p = { p0.x + i * step_x, p0.y + i * step_y };
+        char child_id[64];
+        snprintf(child_id, sizeof child_id, "%s_%d", id, i);
+        ramify(child_id, p, child_radius, angle + 45, branches - 1, out);
+        ramify(child_id, p, child_radius, angle - 45, branches - 1, out);
     }
 }
 
-/******************/
-/* Funções Comuns */
-/******************/
-void alert(char *message, int stop)
+static void build_svg(StringBuilder* out, int branches)
 {
-    printf("%s\n", message);
-    if (stop == TRUE) exit(0);
-}
+    sb_init(out);
+    sb_appendf(out,
+        "<?xml version=\"1.0\" standalone=\"no\"?>\n"
+        "<svg width=\"%d\" height=\"%d\" viewBox=\"0 0 %d %d\"\n"
+        "\txmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">\n"
+        "\t<title>Tree SVG - C</title>\n",
+        CFG.viewbox_w, CFG.viewbox_h, CFG.viewbox_w, CFG.viewbox_h);
 
-/* Concatenar duas strings */
-void join(char **original, const char *extra)
-{
-    char *temp;
-    temp = malloc(strlen(*original) + strlen(extra) + 1);
-    if (!temp) alert("Insufficient memory!", TRUE);
+    double mid_x = CFG.viewbox_w / 2.0;
 
-    strcpy(temp, *original);
-    strcat(temp, extra);
+    svg_line(out, "ground", (Point) { 0, 0 }, (Point) { CFG.viewbox_w, 0 });
+    svg_line(out, "trunk", (Point) { mid_x, 0 }, (Point) { mid_x, CFG.stem_height });
 
-    *original = malloc(strlen(temp) + 1);
-    if (!*original) alert("Insufficient memory!", TRUE);
+    ramify("branch", (Point) { mid_x, CFG.stem_height },
+        CFG.initial_radius, CFG.initial_angle, branches, out);
 
-    strcpy(*original, temp);
-    free(temp);
-}
-
-/* Salvar arquivo */
-void export(const char *filename, const char *text)
-{
-    FILE *file = fopen(filename, "w");
-
-    if (file == NULL) {
-        alert("Error opening file!\n", TRUE);
-    }
-
-    fprintf(file, "%s\n", text);
-    fclose(file);
+    sb_append(out, "</svg>\n");
 }

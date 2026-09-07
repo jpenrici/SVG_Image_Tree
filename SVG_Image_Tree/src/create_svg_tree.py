@@ -1,144 +1,151 @@
-# -*- Mode: Python3; coding: utf-8; indent-tabs-mpythoode: nil; tab-width: 4 -*-
+#!/usr/bin/env python3
+"""
+Generate an SVG drawing of a simple fractal tree (front view).
 
-'''
-   Construir arquivo SVG com desenho de uma pequena árvore.
-'''
+Usage:
+    python tree.py [branches] [output.svg]
+    python tree.py 4 tree.svg
+"""
 
-from math import sin, cos, pi
+from __future__ import annotations
 
-# Constantes
-EOL = '\n'
-TAB = '\t'
+import math
+import sys
 
-VBX = 400  # viewBox largura
-VBY = 400  # viewBox altura
-COLOR_LINE = "#2B1100"
-STROKE_LINE = "5"
-COLOR_CIRCLE = "#00A000"
-
-HEAD = '''<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="#VBX#px" height="#VBY#px" viewBox="0 0 #VBX# #VBY#"
-    xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <title>#TITLE#</title>
-'''
-FOOTER = "</svg>"
-OUTPUT = "tree_1.svg"
+from dataclasses import dataclass
+from pathlib import Path
 
 
-def export(filename, svg):
-    try:
-        filename = open(filename, "w")
-        filename.write(svg)
-        filename.close()
-    except Exception:
-        print("Error!")
-        exit(0)
+@dataclass(frozen=True)
+class Config:
+    viewbox_w: int = 400
+    viewbox_h: int = 400
+    stem_height: float = 20.0
+    initial_radius: float = 250.0
+    initial_angle: float = 90.0
+    line_color: str = "#2B1100"
+    line_width: int = 5
+    leaf_color: str = "#00A000"
 
 
-def line(id, x0, y0, x1, y1):
-
-    print("line {}: {},{} to {},{}".format(id, x0, y0, x1, y1))
-
-    element = TAB + "<path" + EOL + TAB + TAB \
-        + "style=\"fill:none;stroke:" + COLOR_LINE + ";" \
-        + "stroke-width:" + STROKE_LINE + ";stroke-linecap:round;" \
-        + "stroke-linejoin:round;stroke-miterlimit:4;" \
-        + "stroke-dasharray:none;stroke-opacity:1\"" + EOL \
-        + TAB + TAB + "d=\"M "
-
-    # ajustar aos eixos X,Y
-    y0 = VBY - y0
-    y1 = VBY - y1
-
-    element += "{},{} {},{}\"".format(x0, y0, x1, y1)
-    element += EOL + TAB + TAB + "id=\"" + id + "\" />" + EOL
-
-    return element
+CFG = Config()
 
 
-def ellipse(id, rx, ry, cx, cy):
+@dataclass(frozen=True)
+class Point:
+    x: float
+    y: float
 
-    print("ellipse {}: cx= {}, cy= {} and rx= {}, ry= {}".format(id, cx,
-          cy, rx, ry))
-
-    element = TAB + "<ellipse" + EOL + TAB + TAB \
-        + "style=\"opacity:0.6;fill:" + COLOR_CIRCLE + ";fill-opacity:1;" \
-        + "stroke:none;stroke-width:0;stroke-linecap:round;" \
-        + "stroke-linejoin:round;stroke-miterlimit:4;" \
-        + "stroke-dasharray:none;stroke-opacity:1\"" + EOL
-
-    # ajustar aos eixos X,Y
-    cy = VBY - cy
-
-    element += TAB + TAB + "ry=\"" + str(ry) + "\"" + EOL
-    element += TAB + TAB + "rx=\"" + str(rx) + "\"" + EOL
-    element += TAB + TAB + "cy=\"" + str(cy) + "\"" + EOL
-    element += TAB + TAB + "cx=\"" + str(cx) + "\"" + EOL
-    element += TAB + TAB + "id=\"ellipse_" + id + "\" />" + EOL
-
-    return element
+    def moved(self, radius: float, angle_deg: float) -> Point:
+        rad = math.radians(angle_deg)
+        return Point(self.x + radius * math.cos(rad), self.y + radius * math.sin(rad))
 
 
-def move(x, y, radius, angle):
-
-    # print("(x,y): {},{} => ".format(x,y), end="")
-
-    # alterar X,Y
-    x = int(x + radius * cos(angle * pi / 180))
-    y = int(y + radius * sin(angle * pi / 180))
-
-    # print("{},{} [radius = {}, angle = {}]".format(x, y, radius, angle))
-
-    return (x, y)
+@dataclass(frozen=True)
+class Line:
+    id: str
+    p0: Point
+    p1: Point
 
 
-def ramify(id, x0, y0, radius, angle, branches, svg=""):
+@dataclass(frozen=True)
+class Leaf:
+    id: str
+    center: Point
+    rx: float
+    ry: float
 
-    if radius < 0:
-        return svg
 
-    x1, y1 = move(x0, y0, radius, angle)
-    svg = line(id + str(branches), x0, y0, x1, y1)
-    svg += ellipse(id + str(branches), branches * 20, branches * 10, x1, y1)
+type Element = Line | Leaf
 
-    sX = (x1 - x0)//branches
-    sY = (y1 - y0)//branches
-    radius = radius//branches
+
+def flip_y(y: float) -> float:
+    return CFG.viewbox_h - y
+
+
+def render(element: Element) -> str:
+    match element:
+        case Line(id=id_, p0=p0, p1=p1):
+            return (
+                f"\t<path\n"
+                f'\t\tstyle="fill:none;stroke:{CFG.line_color};stroke-width:{CFG.line_width};'
+                f'stroke-linecap:round;stroke-linejoin:round"\n'
+                f'\t\td="M {p0.x:.2f},{flip_y(p0.y):.2f} {p1.x:.2f},{flip_y(p1.y):.2f}"\n'
+                f'\t\tid="{id_}" />\n'
+            )
+        case Leaf(id=id_, center=c, rx=rx, ry=ry):
+            return (
+                f"\t<ellipse\n"
+                f'\t\tstyle="opacity:0.6;fill:{CFG.leaf_color};stroke:none"\n'
+                f'\t\trx="{rx:.2f}" ry="{ry:.2f}" cx="{c.x:.2f}" cy="{flip_y(c.y):.2f}"\n'
+                f'\t\tid="leaf_{id_}" />\n'
+            )
+
+
+def ramify(
+    id_: str, p0: Point, radius: float, angle: float, branches: int
+) -> list[Element]:
+    p1 = p0.moved(radius, angle)
+    elements: list[Element] = [
+        Line(id_, p0, p1),
+        Leaf(id_, p1, branches * 20.0, branches * 10.0),
+    ]
+
+    if branches <= 1:
+        return elements
+
+    step_x = (p1.x - p0.x) / branches
+    step_y = (p1.y - p0.y) / branches
+    child_radius = radius / branches
+
     for i in range(1, branches):
-        x = int(x0 + i * sX)
-        y = int(y0 + i * sY)
-        temp = id + '_' + str(i)
-        svg += ramify(temp, x, y, radius, angle + 45, branches - 1, svg)
-        svg += ramify(temp, x, y, radius, angle - 45, branches - 1, svg)
+        p = Point(p0.x + i * step_x, p0.y + i * step_y)
+        child_id = f"{id_}_{i}"
+        elements += ramify(child_id, p, child_radius, angle + 45, branches - 1)
+        elements += ramify(child_id, p, child_radius, angle - 45, branches - 1)
 
-    return svg
+    return elements
 
 
-def create(branches):
+def build_svg(branches: int) -> str:
+    mid_x = CFG.viewbox_w / 2
 
-    x, y = VBX//2, 0    # coordenadas
-    radius = 250        # raio, ângulo inicial da ramificação
-    angle = 90
-    stem = 20          # altura dd tronco em px
+    elements: list[Element] = [
+        Line("ground", Point(0, 0), Point(CFG.viewbox_w, 0)),
+        Line("trunk", Point(mid_x, 0), Point(mid_x, CFG.stem_height)),
+    ]
+    elements += ramify(
+        "branch",
+        Point(mid_x, CFG.stem_height),
+        CFG.initial_radius,
+        CFG.initial_angle,
+        branches,
+    )
 
-    # create SVG
-    head = HEAD.replace("#VBX#", str(VBX))
-    head = head.replace("#VBY#", str(VBY))
-    head = head.replace("#TITLE#", "Tree SVG - Py")
-    svg = head
-    svg += line("base", 0, y, VBX, y)
-    svg += line("trunk", x, y, x, y + stem)
-    svg += ramify("branch", x, stem, radius, angle, branches)
-    svg += FOOTER
+    header = (
+        '<?xml version="1.0" standalone="no"?>\n'
+        f'<svg width="{CFG.viewbox_w}" height="{CFG.viewbox_h}" '
+        f'viewBox="0 0 {CFG.viewbox_w} {CFG.viewbox_h}"\n'
+        '\txmlns="http://www.w3.org/2000/svg" version="1.1">\n'
+        "\t<title>Tree SVG - Python</title>\n"
+    )
+    body = "".join(render(e) for e in elements)
+    return header + body + "</svg>\n"
 
-    export(OUTPUT, svg)
-    print("Check ", OUTPUT)
+
+def main(argv: list[str]) -> int:
+    branches = int(argv[1]) if len(argv) > 1 else 4
+    output = Path(argv[2]) if len(argv) > 2 else Path("tree.svg")
+
+    if branches <= 0:
+        print("branches must be a positive integer", file=sys.stderr)
+        return 1
+
+    output.write_text(build_svg(branches), encoding="utf-8")
+    print(f"Check {output}")
     print("Finished.")
+    return 0
 
 
-if __name__ == '__main__':
-
-    # Teste
-    create(3)
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv))

@@ -1,0 +1,645 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="400" height="400" viewBox="0 0 400 400"
+	xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<title>Tree SVG - Python</title>
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 0.00,400.00 400.00,400.00"
+		id="ground" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,400.00 200.00,380.00"
+		id="trunk" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,380.00 200.00,130.00"
+		id="branch" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="80.00" ry="40.00" cx="200.00" cy="130.00"
+		id="leaf_branch" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,317.50 155.81,273.31"
+		id="branch_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="60.00" ry="30.00" cx="155.81" cy="273.31"
+		id="leaf_branch_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,302.77 164.44,302.77"
+		id="branch_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="164.44" cy="302.77"
+		id="leaf_branch_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 174.85,302.77 167.49,310.13"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="167.49" cy="310.13"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 174.85,302.77 167.49,295.40"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="167.49" cy="295.40"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,302.77 185.27,281.94"
+		id="branch_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="185.27" cy="281.94"
+		id="leaf_branch_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,292.35 177.90,284.99"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="177.90" cy="284.99"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,292.35 192.63,284.99"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="192.63" cy="284.99"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,288.04 149.70,288.04"
+		id="branch_1_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="149.70" cy="288.04"
+		id="leaf_branch_1_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 160.12,288.04 152.75,295.40"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="152.75" cy="295.40"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 160.12,288.04 152.75,280.67"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="152.75" cy="280.67"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,288.04 170.54,267.20"
+		id="branch_1_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="170.54" cy="267.20"
+		id="leaf_branch_1_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,277.62 163.17,270.25"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="163.17" cy="270.25"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,277.62 177.90,270.25"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="177.90" cy="270.25"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,317.50 244.19,273.31"
+		id="branch_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="60.00" ry="30.00" cx="244.19" cy="273.31"
+		id="leaf_branch_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,302.77 214.73,281.94"
+		id="branch_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="214.73" cy="281.94"
+		id="leaf_branch_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,292.35 207.37,284.99"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="207.37" cy="284.99"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,292.35 222.10,284.99"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="222.10" cy="284.99"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,302.77 235.56,302.77"
+		id="branch_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="235.56" cy="302.77"
+		id="leaf_branch_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 225.15,302.77 232.51,295.40"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="232.51" cy="295.40"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 225.15,302.77 232.51,310.13"
+		id="branch_1_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="232.51" cy="310.13"
+		id="leaf_branch_1_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,288.04 229.46,267.20"
+		id="branch_1_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="229.46" cy="267.20"
+		id="leaf_branch_1_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,277.62 222.10,270.25"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="222.10" cy="270.25"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,277.62 236.83,270.25"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="236.83" cy="270.25"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,288.04 250.30,288.04"
+		id="branch_1_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="250.30" cy="288.04"
+		id="leaf_branch_1_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 239.88,288.04 247.25,280.67"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="247.25" cy="280.67"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 239.88,288.04 247.25,295.40"
+		id="branch_1_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="247.25" cy="295.40"
+		id="leaf_branch_1_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,255.00 155.81,210.81"
+		id="branch_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="60.00" ry="30.00" cx="155.81" cy="210.81"
+		id="leaf_branch_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,240.27 164.44,240.27"
+		id="branch_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="164.44" cy="240.27"
+		id="leaf_branch_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 174.85,240.27 167.49,247.63"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="167.49" cy="247.63"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 174.85,240.27 167.49,232.90"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="167.49" cy="232.90"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,240.27 185.27,219.44"
+		id="branch_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="185.27" cy="219.44"
+		id="leaf_branch_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,229.85 177.90,222.49"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="177.90" cy="222.49"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,229.85 192.63,222.49"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="192.63" cy="222.49"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,225.54 149.70,225.54"
+		id="branch_2_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="149.70" cy="225.54"
+		id="leaf_branch_2_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 160.12,225.54 152.75,232.90"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="152.75" cy="232.90"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 160.12,225.54 152.75,218.17"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="152.75" cy="218.17"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,225.54 170.54,204.70"
+		id="branch_2_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="170.54" cy="204.70"
+		id="leaf_branch_2_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,215.12 163.17,207.75"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="163.17" cy="207.75"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,215.12 177.90,207.75"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="177.90" cy="207.75"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,255.00 244.19,210.81"
+		id="branch_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="60.00" ry="30.00" cx="244.19" cy="210.81"
+		id="leaf_branch_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,240.27 214.73,219.44"
+		id="branch_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="214.73" cy="219.44"
+		id="leaf_branch_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,229.85 207.37,222.49"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="207.37" cy="222.49"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,229.85 222.10,222.49"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="222.10" cy="222.49"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,240.27 235.56,240.27"
+		id="branch_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="235.56" cy="240.27"
+		id="leaf_branch_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 225.15,240.27 232.51,232.90"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="232.51" cy="232.90"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 225.15,240.27 232.51,247.63"
+		id="branch_2_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="232.51" cy="247.63"
+		id="leaf_branch_2_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,225.54 229.46,204.70"
+		id="branch_2_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="229.46" cy="204.70"
+		id="leaf_branch_2_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,215.12 222.10,207.75"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="222.10" cy="207.75"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,215.12 236.83,207.75"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="236.83" cy="207.75"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,225.54 250.30,225.54"
+		id="branch_2_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="250.30" cy="225.54"
+		id="leaf_branch_2_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 239.88,225.54 247.25,218.17"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="247.25" cy="218.17"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 239.88,225.54 247.25,232.90"
+		id="branch_2_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="247.25" cy="232.90"
+		id="leaf_branch_2_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,192.50 155.81,148.31"
+		id="branch_3" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="60.00" ry="30.00" cx="155.81" cy="148.31"
+		id="leaf_branch_3" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,177.77 164.44,177.77"
+		id="branch_3_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="164.44" cy="177.77"
+		id="leaf_branch_3_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 174.85,177.77 167.49,185.13"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="167.49" cy="185.13"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 174.85,177.77 167.49,170.40"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="167.49" cy="170.40"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,177.77 185.27,156.94"
+		id="branch_3_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="185.27" cy="156.94"
+		id="leaf_branch_3_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,167.35 177.90,159.99"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="177.90" cy="159.99"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 185.27,167.35 192.63,159.99"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="192.63" cy="159.99"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,163.04 149.70,163.04"
+		id="branch_3_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="149.70" cy="163.04"
+		id="leaf_branch_3_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 160.12,163.04 152.75,170.40"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="152.75" cy="170.40"
+		id="leaf_branch_3_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 160.12,163.04 152.75,155.67"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="152.75" cy="155.67"
+		id="leaf_branch_3_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,163.04 170.54,142.20"
+		id="branch_3_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="170.54" cy="142.20"
+		id="leaf_branch_3_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,152.62 163.17,145.25"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="163.17" cy="145.25"
+		id="leaf_branch_3_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 170.54,152.62 177.90,145.25"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="177.90" cy="145.25"
+		id="leaf_branch_3_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 200.00,192.50 244.19,148.31"
+		id="branch_3" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="60.00" ry="30.00" cx="244.19" cy="148.31"
+		id="leaf_branch_3" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,177.77 214.73,156.94"
+		id="branch_3_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="214.73" cy="156.94"
+		id="leaf_branch_3_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,167.35 207.37,159.99"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="207.37" cy="159.99"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,167.35 222.10,159.99"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="222.10" cy="159.99"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 214.73,177.77 235.56,177.77"
+		id="branch_3_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="235.56" cy="177.77"
+		id="leaf_branch_3_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 225.15,177.77 232.51,170.40"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="232.51" cy="170.40"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 225.15,177.77 232.51,185.13"
+		id="branch_3_1_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="232.51" cy="185.13"
+		id="leaf_branch_3_1_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,163.04 229.46,142.20"
+		id="branch_3_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="229.46" cy="142.20"
+		id="leaf_branch_3_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,152.62 222.10,145.25"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="222.10" cy="145.25"
+		id="leaf_branch_3_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,152.62 236.83,145.25"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="236.83" cy="145.25"
+		id="leaf_branch_3_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 229.46,163.04 250.30,163.04"
+		id="branch_3_2" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="40.00" ry="20.00" cx="250.30" cy="163.04"
+		id="leaf_branch_3_2" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 239.88,163.04 247.25,155.67"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="247.25" cy="155.67"
+		id="leaf_branch_3_2_1" />
+	<path
+		style="fill:none;stroke:#2B1100;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+		d="M 239.88,163.04 247.25,170.40"
+		id="branch_3_2_1" />
+	<ellipse
+		style="opacity:0.6;fill:#00A000;stroke:none"
+		rx="20.00" ry="10.00" cx="247.25" cy="170.40"
+		id="leaf_branch_3_2_1" />
+</svg>

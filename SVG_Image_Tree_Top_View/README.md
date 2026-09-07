@@ -70,4 +70,4 @@ Running again with `--seed 42` (and the same other parameters) reproduces the ex
 
 ## Display
 
-![example](https://github.com/jpenrici/SVG_Image_Tree/blob/master/SVG_Image_Tree_Top_View/tree_top_view.svg)
+![example](https://github.com/jpenrici/SVG_Image_Tree/blob/master/SVG_Image_Tree_Top_View/output/tree_top_view.svg)
